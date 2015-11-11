@@ -161,3 +161,44 @@ footer.closure {
   color: #868686;
 }
 
+/* ----social links----- */
+
+.profile-link{
+  color: #fff;
+} 
+.col .links {
+  float: right;
+  clear: both;  
+  transform: translateZ(0);
+}
+.col .links .profile-link {
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  font-size: 40px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.col .links .profile-link:hover {
+  transform: scale(1.2);
+}
+.col .links .profile-link:hover:after {
+  opacity: 1;
+  transform: scale(1) translate(-50%, 0);
+}
+.col .links .profile-link:active {
+  transform: scale(1.1);
+}
+.col .links .profile-link:after {
+  content: "@" attr(data-user);
+  font-size: 12px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  text-align: center;
+  opacity: 0;
+  transform-origin: 0 0;
+  transform: scale(0) translate(-50%, -100px);
+  transition: transform 0.25s ease 0.25s, opacity 0.25s;
+}
+ 
