@@ -125,6 +125,7 @@ h3{
   color: white;
   margin: 0;
   line-height: 1.25;
+  min-height: 104px;
 }
 
 .card header img.avatar {
